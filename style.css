@@ -1,0 +1,91 @@
+* Reset for better cross-browser compatibility */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  /* Ensures all elements align to the center vertically */
+    padding: 1rem 2rem;
+    background-color: #f0f0f0;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 1.5rem;
+    margin-right: 1rem;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;  /* Stacks navigation items vertically */
+    align-items: flex-start;  /* Aligns them to the left for proper positioning */
+    list-style: none;
+    margin-top: 0.5rem;  /* Adds some space between heading and navigation */
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    padding: 0.5rem 1rem;
+    margin-bottom: 0.5rem;  /* Adds some space between navigation items */
+}
+
+nav a:hover {
+    background-color: #e0e0e0;
+}
+
+.add-course {
+    display: flex;
+    align-items: center;
+    background-color: #4CAF50;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    margin-bottom: 0.5rem;  /* Add some space between "Add Course" and list items */
+}
+
+.add-course i {
+    margin-right: 0.5rem;
+}
+
+.profile-icon {
+    cursor: pointer;  /* Add hover effect for potential future interaction */
+}
+
+.profile-icon i {
+    font-size: 1.2rem;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-wrap: wrap;
+    }
+
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    nav {
+        align-items: flex-start;  /* Maintain left alignment for smaller screens */
+        margin-top: 1rem;
+    }
+
+    nav a {
+        margin-bottom: 0.5rem;
+    }
+}
+body {
+    background-image: url("https://unsplash.com/photos/woman-in-white-shirt-sitting-on-chair-using-laptop-computer-folBYP0ED0k"); /* Replace with your desired image URL */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }

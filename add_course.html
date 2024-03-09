@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eduzen - Add Course</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header-container">
+    <h1>Eduzen</h1>
+    <nav>
+      <a href="#">Home</a>
+      <ul>
+        <li><a href="#">Courses</a></li>
+        <li><a href="#">Profile</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h2>Add Course</h2>
+    <form action="#" method="post"> <div class="question-container">
+        <h3>Question 1: Title of your course?</h3>
+        <input type="text" name="course_title" required>
+      </div>
+      <div class="question-container">
+        <h3>Question 2: What is your familiarity with the course ?</h3>
+        <select name="course_familiarity" required>
+            <option value="">Select an option</option>
+            <option value="Beginner">Beginner</option>
+            <option value="Intermediate">Intermediate</option>
+            <option value="Advanced">Advanced</option>
+          </select>
+      </div>
+      <div class="question-container">
+        <h3>Question 3: What are the topics you are already familiar with(Keywords)?</h3>
+        <textarea name="course_description" required></textarea>
+      </div>
+      <div class="question-container">
+        <h3>Question 4: What are the topics you are not familiar with(keywords) and willing to learn?</h3>
+        <textarea name="course_description" required></textarea>
+      </div>
+      <button type="submit">Submit Course</button>
+    </form>
+  </main>
+
+</body>
+</html>

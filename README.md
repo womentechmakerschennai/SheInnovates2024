@@ -1,4 +1,4 @@
-# SheInnovates2024
+# MClub - SheInnovates2024
 IWD 2024 - SheInnovates Hackathon
 
 # Wanna submit your project?

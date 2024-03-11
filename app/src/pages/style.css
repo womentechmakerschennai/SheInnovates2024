@@ -1,0 +1,21 @@
+.bottom-nav {
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+}
+.form-field {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+}
+.form-container {
+    padding: 30px;
+    text-align: start;
+}
+
+h2 {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}

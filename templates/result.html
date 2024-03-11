@@ -1,0 +1,48 @@
+<aside class="profile-card">
+    <header>
+      <!-- here’s the avatar -->
+      <a target="_blank" href="#">
+        <!-- <img src="http://lorempixel.com/150/150/people/" class="hoverZoomLink"> -->
+        <link rel="stylesheet" type="text/css" href="./static/nicepage.css">
+      </a>
+  
+      <!-- the username -->
+      <h1>
+        Result: {{ html_data | safe }}
+            </h1>
+  
+      <!-- and role or location -->
+      <h2>
+        <br>
+        CUTIS CARE
+          
+            </h2>
+  
+    </header>
+  
+    <!-- bit of a bio; who are you? -->
+    <div class="profile-bio">
+
+            <p> DIAGNOSIS REPORT</p>
+            <h3>Details :</h3>
+            <div class="profile-bio">
+                <p>{{ result | safe }}</p>
+            </div>
+            <div class="profile-bio">
+                <h3>Comment:</h3> 
+                <p>{{ cmt | safe }} </p>
+            </div>
+   
+    </div>
+  
+    <!-- some social links to show off -->
+
+    <script>
+
+        fetch('/')
+          .then(response => response.json())
+          .then(json => {
+            document.querySelector('.title').innerHTML=json.output;
+          })
+        </script>
+  </aside>
